@@ -7,13 +7,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { NopagefoundComponent } from './pages/nopagefound/nopagefound.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BreadcrumbsComponent } from './shared/breadcrumbs/breadcrumbs.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { HeaderComponent } from './shared/header/header.component';
-import { ProgressComponent } from './pages/progress/progress.component';
-import { GraficaOneComponent } from './pages/grafica-one/grafica-one.component';
-import { PagesComponent } from './pages/pages.component';
+
+import { PagesModule } from './pages/pages.module';
+
 
 @NgModule({
   declarations: [
@@ -21,17 +20,12 @@ import { PagesComponent } from './pages/pages.component';
     LoginComponent,
     RegisterComponent,
     NopagefoundComponent,
-    DashboardComponent,
-    BreadcrumbsComponent,
-    SidebarComponent,
-    HeaderComponent,
-    ProgressComponent,
-    GraficaOneComponent,
-    PagesComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
